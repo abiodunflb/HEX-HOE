@@ -17,6 +17,7 @@ $('table tr td').click(function () {
             if (findWinner() == 'X') {
                 $('#winnerX').css({
                     'visibility': 'visible',
+                    'display': 'block',
                     'transition': 'all 1s',
                     'animation-name': 'intro-winner',
                     'animation-duration': '1.4s',
@@ -30,6 +31,7 @@ $('table tr td').click(function () {
             } else if (findWinner() == 'O') {
                 $('#winnerY').css({
                     'visibility': 'visible',
+                    'display': 'block',
                     'transition': 'all 1s',
                     'animation-name': 'intro-winner',
                     'animation-duration': '1.4s',

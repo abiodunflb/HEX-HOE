@@ -47,8 +47,13 @@ table tr td:hover {
     }
 }
 
+.alert {
+    margin-bottom: 0;
+}
+
 #winnerX,
 #winnerY {
     visibility: hidden;
+    display: none;
 
 }
