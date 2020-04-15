@@ -50,8 +50,5 @@ table tr td:hover {
 #winnerX,
 #winnerY {
     visibility: hidden;
-    animation-name: intro-winner;
-    animation-duration: 1.4s;
-    animation-delay: 0.1s;
-    animation-fill-mode: both;
+
 }

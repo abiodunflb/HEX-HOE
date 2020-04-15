@@ -17,7 +17,11 @@ $('table tr td').click(function () {
             if (findWinner() == 'X') {
                 $('#winnerX').css({
                     'visibility': 'visible',
-                    'transition': 'all 1s'
+                    'transition': 'all 1s',
+                    'animation-name': 'intro-winner',
+                    'animation-duration': '1.4s',
+                    'animation-delay': '0.1s',
+                    'animation-fill-mode': 'both'
                 });
                 // $('body').append('<div class="winner"><span>Winner</span>X</div>');
                 // $('body').append('<button onclick="location.reload()">Play Again</button>');
@@ -26,7 +30,11 @@ $('table tr td').click(function () {
             } else if (findWinner() == 'O') {
                 $('#winnerY').css({
                     'visibility': 'visible',
-                    'transition': 'all 1s'
+                    'transition': 'all 1s',
+                    'animation-name': 'intro-winner',
+                    'animation-duration': '1.4s',
+                    'animation-delay': '0.1s',
+                    'animation-fill-mode': 'both'
                 });
                 // $('body').append('<div class="winner"><span>Winner</span>O</div>');
                 // $('body').append('<button onclick="location.reload()">Play Again</button>');
