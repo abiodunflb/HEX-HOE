@@ -51,9 +51,7 @@ table tr td:hover {
     margin-bottom: 0;
 }
 
-#winnerX,
-#winnerY {
+#winner {
     visibility: hidden;
-    display: none;
 
 }
