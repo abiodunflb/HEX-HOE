@@ -15,15 +15,26 @@ $('table tr td').click(function () {
 
         if (findWinner() != -1 && findWinner() != "") {
             if (findWinner() == 'X') {
-                $('body').append('<div class="winner"><span>Winner</span>X</div>');
-                $('body').append('<button onclick="location.reload()">Play Again</button>');
-                $('.winner').css('background-color', '#61892f');
-                $('button').css('color', '#61892f');
-            } else {
-                $('body').append('<div class="winner"><span>Winner</span>O</div>');
-                $('body').append('<button onclick="location.reload()">Play Again</button>');
-                $('.winner').css('background-color', 'blue');
-                $('button').css('color', 'blue');
+                $('#winnerX').css({
+                    'visibility': 'visible',
+                    'transition': 'all 1s'
+                });
+                // $('body').append('<div class="winner"><span>Winner</span>X</div>');
+                // $('body').append('<button onclick="location.reload()">Play Again</button>');
+                // $('.winner').css('background-color', '#61892f');
+                // $('button').css('color', '#61892f');
+            } else if (findWinner() == 'O') {
+                $('#winnerY').css({
+                    'visibility': 'visible',
+                    'transition': 'all 1s'
+                });
+                // $('body').append('<div class="winner"><span>Winner</span>O</div>');
+                // $('body').append('<button onclick="location.reload()">Play Again</button>');
+                // $('.winner').css('background-color', 'blue');
+                // $('button').css({
+                //     'color': 'blue',
+                //     'margin': '1.25rem auto'
+                // });
             }
 
             play = false;
